@@ -54,13 +54,11 @@
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.telegram/telegrambots -->
         <dependency>
-            <groupId>org.telegram</groupId>
-            <artifactId>telegrambots</artifactId>
-            <version>6.8.0</version>
+            <groupId>com.github.xabgesagtx</groupId>
+            <artifactId>telegram-spring-boot-starter</artifactId>
+            <version>0.26</version>
         </dependency>
-
     </dependencies>
 
     <build>
