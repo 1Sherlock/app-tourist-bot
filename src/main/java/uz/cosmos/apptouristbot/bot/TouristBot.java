@@ -1,16 +1,22 @@
 package uz.cosmos.apptouristbot.bot;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.ChatMemberUpdated;
 import org.telegram.telegrambots.meta.api.objects.Update;
+import uz.cosmos.apptouristbot.service.BotService;
 
 import java.util.Objects;
 
 @Component
 public class TouristBot extends TelegramLongPollingBot {
+
+    @Autowired
+    BotService botService;
+
     @Value("${bot.token}")
     private String botToken;
 
